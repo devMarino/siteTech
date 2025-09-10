@@ -21,19 +21,22 @@ line-height: 1.6;
 }
 
 header {
-    grid-area: header;
-    background: #fff;
+  grid-area: header;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff; /* importante para cobrir o fundo */
 }
 /* nav index */
 nav {
-    left: 1em;
+  left: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
-  z-index: 1000;
 }
 /*logo */
 nav .logo {
@@ -71,13 +74,8 @@ nav ul li a:hover {
 main {
     grid-area: main;
 }
-/* seções index */
-.section {
-  padding: 60px 10%;
-  text-align: center;
-}
 
-.produtoInicio {
+.Inicio {
   display: flex;
   justify-content: center; /*centraliza eixo X */
   align-items: center; /* centraliza eixo Y */
@@ -89,44 +87,95 @@ main {
 
 }
 
-/* todas as seções de imagens formato igual */
-.produtoInicio img, .suporteInicio img {
-  width: 30em;   /* largura fixa */
+/* formato de imagem inicio */
+.Inicio img{
+  width: 28em;   /* largura fixa */
   height: auto; /* mesma altura */
-  object-fit: cover;
   object-fit: cover; /* corta proporcionalmente */
-  border-radius: 30%; /* deixa redonda */
+  margin-left: 12em;
+  border-radius: 15%;
+ 
 }
 
-.produtoInicio img{
+.Inicio img{
    box-shadow: 
   0 5px 15px rgba(0,0,0,0.2),   /* sombra principal */
   0 10px 30px rgba(0,0,0,0.15); /* sombra mais difusa */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.produtoInicio img:hover{
+.Inicio img:hover{
    transform: translateY(-10px) scale(1.05); /* levanta um pouco */
   box-shadow: 
     0 15px 25px rgba(0,0,0,0.3),
     0 25px 50px rgba(0,0,0,0.2);
 }
 
-.produtoInicio h1 {
+.Inicio h1 {
   font-size: 2em;
   text-align: left; /*alinha pra esquerda */
 }
 
-.produtoInicio p {
+.Inicio p {
   margin-bottom: 1em;
   text-align: end;
   font-size: small;
   color: #444;
 }
 
+/* embaixo-index */
+.InicioEmbaixo {
+  display: flex;
+  justify-content: center; /* centraliza */
+  align-items: center;
+  gap: 8em;
+  padding: 12%; /* centraliza eixo Y */
+}
 
+/*formato de imagem embaixo */
+.InicioEmbaixo img {
+  width: 35em;   /* largura fixa */
+  height: auto; /* mesma altura */
+  object-fit: cover; /* corta proporcionalmente */
+  border-radius: 10em; /* deixa redonda */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.InicioEmbaixo img{
+  box-shadow: 
+  0 5px 15px rgba(0,0,0,0.2),   /* sombra principal */
+  0 10px 30px rgba(0,0,0,0.15); /* sombra mais difusa */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.InicioEmbaixo img:hover{
+  transform: translateY(-10px) scale(1.05); /* levanta um pouco */
+  box-shadow: 
+    0 15px 25px rgba(0,0,0,0.3),
+    0 25px 50px rgba(0,0,0,0.2);
+}
+
+.InicioEmbaixo h1 {
+  text-align: left;
+  margin-bottom: 1.5em ; 
+  font-size: 3em; 
+}
+
+/* posicao lista */
+.listaBeneficio {
+list-style: disc;
+padding-left: 1.5em;
+padding-bottom: 8.6em;
+}
+
+.listaBeneficio li {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #333;
+}  
 /*rodapé*/
 footer {
+    background: linear-gradient(to right, #a8edea, #fed6e3);
     grid-area: footer;
 }
 /* rodapé */
@@ -139,4 +188,20 @@ footer a {
   margin-right: 15px;
   color: #333;
   text-decoration: none;
+}
+
+.redes-sociais {
+  
+  text-align: center;
+}
+
+.redes-sociais a {
+  font-style: oblique;
+  font-size: 1em;
+}
+
+.programador {
+  font-style: italic;
+  text-align: end;
+  padding-right: 1em;
 }
