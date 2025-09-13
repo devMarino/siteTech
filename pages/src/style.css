@@ -100,12 +100,12 @@ main {
 .Inicio img{
    box-shadow: 
   0 5px 15px rgba(0,0,0,0.2),   /* sombra principal */
-  0 10px 30px rgba(0,0,0,0.15); /* sombra mais difusa */
+  0 10px 30px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .Inicio img:hover{
-   transform: translateY(-10px) scale(1.05); /* levanta um pouco */
+   transform: translateY(-10px) scale(1.05); /* levanta a imagem */
   box-shadow: 
     0 15px 25px rgba(0,0,0,0.3),
     0 25px 50px rgba(0,0,0,0.2);
@@ -126,10 +126,10 @@ main {
 /* embaixo-index */
 .InicioEmbaixo {
   display: flex;
-  justify-content: center; /* centraliza */
+  justify-content: center; /* centraliza X */
   align-items: center;
   gap: 8em;
-  padding: 12%; /* centraliza eixo Y */
+  padding: 12%; /* centraliza Y */
 }
 
 /*formato de imagem embaixo */
@@ -144,7 +144,7 @@ main {
 .InicioEmbaixo img{
   box-shadow: 
   0 5px 15px rgba(0,0,0,0.2),   /* sombra principal */
-  0 10px 30px rgba(0,0,0,0.15); /* sombra mais difusa */
+  0 10px 30px rgba(0,0,0,0.15); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

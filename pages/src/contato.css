@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+
+body {
+display: grid;
+grid-template-rows: auto 1fr auto;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"header"
+"main"
+"footer";
+min-height: 100vh;
+background: linear-gradient(to right, #a8edea, #fed6e3);
+color: #111;
+line-height: 1.6;
+}
+
+/* Conteúdo */
+.conteudo {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2em;
+}
+
+.conteudo h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+/* Formulário */
+.formulario {
+  background: #fff;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.formulario label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3em;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 6px rgba(0,119,255,0.3);
+}
+
+/* Botão */
+.formulario button {
+  background: #0077ff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9em;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  background: #005fcc;
+  transform: translateY(-2px);
+}
+
+
+header {
+  grid-area: header;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff; /* importante para cobrir o fundo */
+}
+/* nav index */
+nav {
+  left: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+/*logo */
+nav .logo {
+display: flex;
+align-items: center;
+gap: 1em;
+padding: 1em;
+font-size: 22px;
+font-weight:bolder;
+color: #333;
+}
+/*logo imageem */
+nav .logo img {
+height: 60px;
+width: auto;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  padding-right: 1em ;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0077ff;
+}
+
+main {
+    grid-area: main;
+}
+
+/*rodapé*/
+footer {
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+    grid-area: footer;
+}
+/* rodapé */
+footer img {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.redes-sociais a {
+  margin-right: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.redes-sociais {
+  
+  text-align: center;
+}
+
+.redes-sociais a {
+  font-style: oblique;
+  font-size: 1em;
+}
+
+.programador {
+  font-style: italic;
+  text-align: end;
+  padding-right: 1em;
+}

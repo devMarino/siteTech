@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - LaboratoryTech</title>
+    <title>Contato - Laboratory Tech</title>
+    <link rel="stylesheet" href="./src/contato.css">
+    <link rel="stylesheet" href="./pages/src/response.css">
 </head>
 <body>
-    <header>
-        
+
+    <header class="cabecalho">
+        <!--logo e imagem-->
+    <nav>
+    <div class="logo">
+        <a href="/index.html">
+        <img src="https://i.postimg.cc/wM9ch2mL/logo-Fake-removebg-preview.png" alt="logo-laboratory"></a>
+        LaboratoryTech
+        </div>
+        <!--navegacao-->
+        <ul>
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./servicos.html">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
     </header>
+
+    <!--conteudo-->
+    <main class="conteudo">
+        <h2>Fale conosco</h2>
+        <form class="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <!--rodapé-->
+  <footer>
+    <!--redes-sociais-->
+    <div class="redes-sociais">
+        <p>Redes sociais</p>
+        <a href="https://www.linkedin.com/company/laboratorytech">
+            <img src="https://www.freepnglogos.com/uploads/linkedin-logo-design-30.png" alt="LinkedIn">Linkedln</a>
+        <a href="https://www.instagram.com/laboratorytech">
+            <img src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-logo-instagram-ini-ada-varias-dan-transparan-33.png" alt="Instagram">Instagram</a>
+
+        </div>
+    <div class="programador"><p>Desenvolvido por: <a href="https://github.com/devMarino">devMarino</a>&copy; 2025.</p></div>
+  </footer>
 </body>
 </html>

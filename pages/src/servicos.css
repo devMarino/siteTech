@@ -1,0 +1,163 @@
+/* reseta html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+display: grid;
+grid-template-rows: auto 1fr auto;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"header"
+"main"
+"footer";
+min-height: 100vh;
+background: linear-gradient(to right, #a8edea, #fed6e3);
+color: #111;
+line-height: 1.6;
+}
+
+header {
+  grid-area: header;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff; /* importante para cobrir o fundo */
+}
+/* nav index */
+nav {
+  left: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+/*logo */
+nav .logo {
+display: flex;
+align-items: center;
+gap: 1em;
+padding: 1em;
+font-size: 22px;
+font-weight:bolder;
+color: #333;
+}
+/*logo imageem */
+nav .logo img {
+height: 60px;
+width: auto;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  padding-right: 1em ;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0077ff;
+}
+
+main {
+    grid-area: main;
+}
+
+main h1{
+    font-size: 5em;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+/* Container dos serviços */
+.template-servico {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em; /* espaçamento */
+  flex-wrap: wrap; /* quebra linha no mobile */
+  padding: 2em;
+}
+
+/* Cada card de serviço */
+.servico {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1.5em;
+  text-align: center;
+  flex: 1 1 300px; /* responsivo: mínimo 300px, expande se couber */
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagem dentro do card */
+.servico img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+/* Título e texto */
+.servico h4 {
+  margin-bottom: 0.5em;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.servico p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Efeito hover */
+.servico:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/*rodapé*/
+footer {
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+    grid-area: footer;
+}
+
+/* rodapé */
+footer img {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.redes-sociais a {
+  margin-right: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.redes-sociais {
+  
+  text-align: center;
+}
+
+.redes-sociais a {
+  font-style: oblique;
+  font-size: 1em;
+}
+
+.programador {
+  font-style: italic;
+  text-align: end;
+  padding-right: 1em;
+}
