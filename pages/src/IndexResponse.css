@@ -1,0 +1,97 @@
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; 
+    gap: 5px;
+  }
+
+  nav ul li{
+    text-align: center;
+    flex-direction: row;
+  }
+  .Inicio {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2em;
+  }
+
+  .Inicio img, .InicioEmbaixo img {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+
+  .Inicio img:hover, .InicioEmbaixo img:hover{
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+
+  .Inicio h1, 
+  .Inicio p {
+    text-align: center;
+  }
+
+  .InicioEmbaixo {
+    flex-direction: column-reverse;
+    padding: 1em;
+    gap: 1em;
+    height: auto;
+    text-align: center;
+  } 
+
+  .InicioEmbaixo div {
+    margin-bottom: none;
+    padding-bottom: none;
+  }
+
+  .InicioEmbaixo h1 {
+    text-align: center; 
+  }
+
+  .InicioEmbaixo img {
+    width: 90%;
+    border-radius: 30%;
+  }
+
+  .listaBeneficio {
+    margin-bottom: 1;
+    padding-bottom: 2em;
+    margin-top: 0.2em;
+    text-align: left;
+  }
+}
+
+footer {
+  margin-top: 3em;
+}
+
+.programador {
+  text-align: center;
+  justify-content: center;
+}
+@media (max-width: 480px) {  
+
+  nav .logo img {
+    height: 40px;
+  }
+
+  nav .logo {
+    font-size: 18px;
+  }
+
+  .Inicio h1 {
+    font-size: 1.5em;
+  }
+
+  .InicioEmbaixo h1 {
+    font-size: 2em;
+  }
+
+  .listaBeneficio li {
+    font-size: 1em;
+  }
+}
